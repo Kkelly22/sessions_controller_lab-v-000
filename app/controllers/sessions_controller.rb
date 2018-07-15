@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
   def create
     if params[:name]
       session[:name] = params[:name]
-      render :hello
+      redirect_to 'application/hello'
     else
-      render :new
+      redirect_to 'new'
     end
   end
 
