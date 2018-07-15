@@ -10,5 +10,4 @@ RSpec.describe "application/hello.html.erb", type: :view do
     end
   end
 
-
 end
