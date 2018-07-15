@@ -4,7 +4,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:name] = params[:name]
+    if params[:name]
+      session[:name] = params[:name]
+    else
+      render :new
+    end
   end
 
   def destroy
