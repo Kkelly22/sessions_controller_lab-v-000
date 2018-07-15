@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       session[:name] = params[:name]
       redirect_to 'application/hello'
     else
-      redirect_to 'new'
+      redirect_to 'sessions/new'
     end
   end
 
