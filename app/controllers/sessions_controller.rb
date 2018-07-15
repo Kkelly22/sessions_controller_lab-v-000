@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
   def create
     if params[:name]
       session[:name] = params[:name]
+      render :hello
     else
       render :new
     end
