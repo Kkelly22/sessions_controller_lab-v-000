@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "sessions/new.html.erb", type: :view do
+RSpec.describe "application/hello.html.erb", type: :view do
 
-  describe 'session new' do
-    it 'shows a login form' do
+  describe 'once a user has logged in' do
+    it 'shows the users name' do
       session[:name] = "Kaitlin"
       render
       expect(rendered).to include 'Kaitlin'
